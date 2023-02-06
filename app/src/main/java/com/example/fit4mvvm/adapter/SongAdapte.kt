@@ -21,6 +21,7 @@ class SongAdapter() : RecyclerView.Adapter<SongAdapter.ItemViewHolder>() {
         val title: TextView = view.findViewById(R.id.song_title_text)
         val artists: TextView = view.findViewById(R.id.song_artist_text)
         val layout: ConstraintLayout = view.findViewById(R.id.song_layout)
+        val time: TextView = view.findViewById(R.id.song_time_text)
 
     }
 
@@ -41,6 +42,7 @@ class SongAdapter() : RecyclerView.Adapter<SongAdapter.ItemViewHolder>() {
 
         holder.title.text = song.title
         holder.artists.text = song.artist
+        holder.time.text = song.time.toString()
 
 
     }
